@@ -4,6 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calculadora">
+    tools:context=".Calculadora">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="CALCULADORA SIMPLES"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title">
+
+        <EditText
+            android:id="@+id/edit_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:textSize="20sp"
+            android:hint="@string/first_numer"/>
+
+        <EditText
+            android:id="@+id/edit_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:textSize="20sp"
+            android:hint="@string/second_numer"/>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/edit_num2"
+        tools:ignore="MissingConstraints,NotSibling">
+        <RadioButton android:id="@+id/op_soma"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+          />
+        <RadioButton android:id="@+id/op_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="-"
+          />
+        <RadioButton android:id="@+id/op_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="*"
+            />
+        <RadioButton android:id="@+id/op_divisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="/"
+            />
+    </RadioGroup>
+
+
+       <!-- <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="UnknownId">
+
+            <RadioButton
+                android:id="@+id/rb_soma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_substracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18sp" />
+        </RadioGroup>-->
+
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="316dp"
+        android:text="CALCULAR"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="RESULTADO"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+
+    <Button
+        android:id="@+id/btn_limpar"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="316dp"
+        android:text="LIMPAR CAMPOS"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

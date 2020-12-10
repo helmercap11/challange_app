@@ -5,6 +5,8 @@
     <string name="listview">ListView</string>
     <string name="btn_mostrar">Mostrar Selecção</string>
     <string name="spinner">Spinner</string>
+    <string name="first_numer">1º Número</string>
+    <string name="second_numer">2º Número</string>
     <array name="fruit">
         <item>Banana</item>
         <item>Laranja</item>
