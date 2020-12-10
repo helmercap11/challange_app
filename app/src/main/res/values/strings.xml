@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">challange_app</string>
+    <string name="challange">"Challange "</string>
+    <string name="calculator">Calculadora</string>
+    <string name="listview">ListView</string>
+    <string name="btn_mostrar">Mostrar Selecção</string>
+    <string name="spinner">Spinner</string>
+    <array name="fruit">
+        <item>Banana</item>
+        <item>Laranja</item>
+        <item>Manga</item>
+        <item>Figo</item>
+        <item>Abacate</item>
+        <item>Melancia</item>
+    </array>
+</resources>
