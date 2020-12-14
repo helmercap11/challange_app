@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise1Activity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha o seu produto"
+            />
+        <CheckBox
+            android:id="@+id/ch_arroz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Arroz (200kz)"
+            />
+        <CheckBox
+           android:id="@+id/ch_leite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Leite (500kz)"
+            />
+        <CheckBox
+            android:id="@+id/ch_carne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Carne (150kz)"
+            />
+        <CheckBox
+            android:id="@+id/ch_feijao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Feijão (300kz)"
+            />
+
+        <Button
+            android:id="@+id/btn_mostrar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_compra"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

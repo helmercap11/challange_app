@@ -6,4 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Listview">
 
+    <ListView
+        android:id="@+id/lv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_marginTop="36dp"/>
+
+    <Button
+        android:id="@+id/btn_mostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="result"
+        android:text="@string/btn_mostrar"
+        tools:ignore="MissingConstraints,UnknownId"
+      />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

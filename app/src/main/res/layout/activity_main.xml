@@ -21,7 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <view class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </view>
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
@@ -37,40 +41,44 @@
 
         <Button
             android:id="@+id/btn_calc"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/calculator"
-            android:textSize="36sp" />
+           />
 
         <Button
             android:id="@+id/btn_listview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/listview"
-            android:textSize="36sp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"/>
+           />
 
         <Button
             android:id="@+id/btn_spinner"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/spinner"
-            android:textSize="36sp"
             />
 
         <Button
-            android:id="@+id/btn_other"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_exerc1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Other"
-            android:textSize="36sp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"/>
+            android:text="Exercise 1"
+           />
+
+        <Button
+            android:id="@+id/btn_exerc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise 2"
+            />
+        <Button
+            android:id="@+id/btn_exerc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise 3"
+            />
     </LinearLayout>
 
 

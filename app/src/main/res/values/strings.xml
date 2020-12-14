@@ -7,6 +7,15 @@
     <string name="spinner">Spinner</string>
     <string name="first_numer">1º Número</string>
     <string name="second_numer">2º Número</string>
+    <string name="total_compra">TOTAL DAS COMPRAS</string>
+    <string name="digite_salario">Digite seu sálario</string>
+    <string name="qual_valor">Marque o seu percentual</string>
+    <string name="calc_new">CALCULAR NOVO SALÁRIO</string>
+    <string name="text_informacoes">Informações da pessoa</string>
+    <string name="txt_name">Insira o nome</string>
+    <string name="btn_add">Adicionar</string>
+    <string name="btn_delete">Apagar Pessoa</string>
+    <string name="txt_idade">Insira a idade</string>
     <array name="fruit">
         <item>Banana</item>
         <item>Laranja</item>

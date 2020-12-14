@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise2ctivity">
+
+    <TextView android:text="Digite seu salário"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edit_salario"
+        android:layout_below="@+id/text_title"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qual_valor"
+        android:id="@+id/text_valor"
+        android:layout_below="@+id/edit_salario"
+        android:layout_alignParentLeft="true" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_valor"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/rg_opcoes">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40%"
+            android:id="@+id/rb_40" />
+        <RadioButton
+            android:id="@+id/rb_45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45%" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:id="@+id/rb_50" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calc_new"
+        android:id="@+id/btn_calcular"
+        android:layout_below="@+id/rg_opcoes"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>
