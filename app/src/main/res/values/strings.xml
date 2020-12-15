@@ -16,6 +16,10 @@
     <string name="btn_add">Adicionar</string>
     <string name="btn_delete">Apagar Pessoa</string>
     <string name="txt_idade">Insira a idade</string>
+    <string name="add_contacto">ADICIONAR NOVO CONTACTO</string>
+    <string name="contacto">Contacto</string>
+    <string name="email">Email</string>
+    <string name="telefone">Numero de telefone</string>
     <array name="fruit">
         <item>Banana</item>
         <item>Laranja</item>

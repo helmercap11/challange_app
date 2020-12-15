@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Challange_app">
-        <activity android:name=".Exercise3ctivity"></activity>
+        <activity android:name=".agendactivity"></activity>
+        <activity android:name=".Exercise3ctivity" />
         <activity android:name=".Exercise2ctivity" />
         <activity android:name=".Exercise1Activity" />
         <activity android:name=".SpinnerActivity" />

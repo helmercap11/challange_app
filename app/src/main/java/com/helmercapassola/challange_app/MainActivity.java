@@ -11,7 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button btn_calculator, btn_listview, btn_spinner,
-            btn_exercise1, btn_exercise2, btn_exercise3;
+            btn_exercise1, btn_exercise2, btn_exercise3,
+    btn_agenda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btn_exercise1 = findViewById(R.id.btn_exerc1);
         btn_exercise2 = findViewById(R.id.btn_exerc2);
         btn_exercise3 = findViewById(R.id.btn_exerc3);
+        btn_agenda = findViewById(R.id.btn_agenda);
 
         btn_calculator.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Exercise3ctivity.class);
                 startActivity(intent);
                 Toast.makeText(MainActivity.this, "List Names", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        btn_agenda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, agendactivity.class);
+                startActivity(intent);
+                Toast.makeText(MainActivity.this, "Agenda", Toast.LENGTH_SHORT).show();
 
             }
         });
